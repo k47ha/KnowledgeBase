@@ -15,6 +15,11 @@ body {
       "sidebar footer";
 }
 
+main {
+    padding-left: var(--universal-padding);
+    padding-right: var(--universal-padding);
+}
+
 nav {
     grid-area: sidebar;
     margin: 0;

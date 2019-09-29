@@ -9,6 +9,7 @@ verify_ssl = true
 geojson = "*"
 beautifulsoup4 = "*"
 lxml = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.7"

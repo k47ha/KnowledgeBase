@@ -1,6 +1,6 @@
 function initMap() {
     // set view Canada
-    var mymap = L.map('mapid').setView([56.1304, -106.3468], 4);
+    var mymap = L.map('mapid').setView([60.1304, -106.3468], 4);
 
     // initialize map
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {

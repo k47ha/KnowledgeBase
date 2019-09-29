@@ -16,7 +16,7 @@ def process_coordinate_string(str):
     return ret
 
 
-with open('EventMapLayer', 'r') as f:
+with open('CDD.kml', 'r') as f:
     data = BeautifulSoup(f, 'lxml')
 
     print(data)

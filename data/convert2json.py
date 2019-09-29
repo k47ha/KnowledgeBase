@@ -5,9 +5,11 @@ from geojson import Feature, FeatureCollection, Point
 features = []
 
 with open('CDD_cleaned.csv', newline='') as csvfile:
-    reader = csv.reader(csvfile, delimiter=' ')
+    reader = csv.DictReader(csvfile, delimiter=',')
 
-    for latitude, longitude, weather, temp in reader:
+    # for latitude, longitude, weather, temp in reader:
+    for row_dict in reader:
+
         latitude, longitude = map(float, (latitude, longitude))
         features.append(
             Feature(

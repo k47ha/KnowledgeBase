@@ -3,23 +3,3 @@
     width: 100%;
     margin: auto;
 }
-
-body {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-      "header header"
-      "sidebar main"
-      "footer footer";
-}
-
-nav {
-    border-top: none;
-    margin: 0;
-    grid-area: sidebar;
-}
-
-header{
-    grid-area: header;
-}

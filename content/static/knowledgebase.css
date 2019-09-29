@@ -1,0 +1,32 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "sidebar footer";
+}
+
+nav {
+    grid-area: sidebar;
+    margin: 0;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}

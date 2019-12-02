@@ -28,3 +28,11 @@ function initMap() {
 
     map.setView({ lat: 47.040182144806664, lng: 9.667968750000002 }, 4);
 }
+
+function reverse() {
+    document.getElementById("headline").innerHTML = "erutnevdA s'eiddA";
+}
+
+function init() {
+    document.getElementById("headline").addEventListener("click", reverse);
+}

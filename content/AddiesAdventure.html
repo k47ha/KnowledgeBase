@@ -8,15 +8,6 @@
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css" />
     <link rel="stylesheet" href="static/knowledgebase.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="" />
-    <link rel="stylesheet" href="static/cdd.css" />
-
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-        crossorigin=""></script>
-    <script src="static/cdd.js"></script>
 
     <script language="JavaScript">
         function showInput() {
@@ -24,23 +15,18 @@
                 "Hello " + document.getElementById("user_name").value + "! We are excited that you are going to join us!";
         }
         function make_visible() {
-            document.getElementById('other').innerHTML = "Hello ";
             document.getElementById("start_adventure").style.visibility = "visible";
         }
 
         function make_invisible() {
             document.getElementById("start_adventure").style.visibility = "hidden";
         }
-
-        function link_to_adventure() {
-
-        }
     </script>
 
 
 </head>
 
-<body onload="initMap();">
+<body onload="make_invisible();">
     <header>
         <a href="index.html" class="logo">KnowledgeBase</a>
     </header>
@@ -62,7 +48,7 @@
             <input type="text" name="user_name" id="user_name">
         </form>
 
-        <input type="submit" onclick="showInput(); make_invisible();"><br />
+        <input type="submit" onclick="showInput(); make_visible();"><br />
         <p><span id='display'></span></p>
         <p><span id='other'></span></p>
 

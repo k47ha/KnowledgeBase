@@ -23,6 +23,19 @@
             document.getElementById('display').innerHTML =
                 "Hello " + document.getElementById("user_name").value + "! We are excited that you are going to join us!";
         }
+        function make_visible() {
+            document.getElementById('other').innerHTML = "Hello ";
+            document.getElementById("start_adventure").style.visibility = "visible";
+        }
+
+        function make_invisible() {
+            document.getElementById("start_adventure").style.visibility = "hidden";
+            document.getElementById('other').innerHTML = "Hello ";
+        }
+
+        function link_to_adventure() {
+
+        }
     </script>
 
 
@@ -50,13 +63,14 @@
             <input type="text" name="user_name" id="user_name">
         </form>
 
-        <input type="submit" onclick="showInput();"><br />
+        <input type="submit" onclick="showInput(); make_invisible();"><br />
         <p><span id='display'></span></p>
+        <p><span id='other'></span></p>
 
 
-        <form action="AddiesAdventure_game.html">
-            <input type="submit" value="Start the adventure" />
-        </form>
+
+        <input type="button" id="start_adventure" value="Start the adventure" onclick="link_to_adventure();" />
+
 
     </main>
 

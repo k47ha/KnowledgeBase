@@ -17,6 +17,15 @@
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
     <script src="static/cdd.js"></script>
+
+    <script language="JavaScript">
+        function showInput() {
+            document.getElementById('display').innerHTML =
+                "Hello " + document.getElementById("user_name").value + "! We are excited that you are going to join us!";
+        }
+    </script>
+
+
 </head>
 
 <body onload="initMap();">
@@ -37,11 +46,17 @@
         <p>Hi I am Addie! IT is great that you are joining us. What is your name?</p>
 
         <form>
-            You:<br>
-            <input type="text" name="youranswer"><br>
+            <label><b>Your name:</b></label>
+            <input type="text" name="user_name" id="user_name">
         </form>
 
-        <a href="AddiesAdventure_game.html">Click here to start the adventure</a>
+        <input type="submit" onclick="showInput();"><br />
+        <p><span id='display'></span></p>
+
+
+        <form action="AddiesAdventure_game.html">
+            <input type="submit" value="Start the adventure" />
+        </form>
 
     </main>
 
